@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shortened URL</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Bootstrap -->
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+
+	<link href="http://fonts.googleapis.com/css?family=Abel|Open+Sans:400,600" rel="stylesheet" />
+
+	<style>
+		body {
+			padding-top: 20px;
+			font-size: 16px;
+			font-family: "Open Sans",serif;
+			background: transparent;
+			background-image: url(https://farm6.staticflickr.com/5221/13762225273_f246e75bd8_b.jpg);
+			background-size: 100%
+		}
+
+		h1 {
+			font-family: "Abel", Arial, sans-serif;
+			font-weight: 400;
+			font-size: 40px;
+		}
+
+		/* Override B3 .panel adding a subtly transparent background */
+		.panel {
+			background-color: rgba(255, 255, 255, 0.6);
+		}
+
+		.margin-base-vertical {
+			margin: 40px 0;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 panel panel-default">
+
+				You shortened url is:
+				<h2>http://localhost:5000/{{ short }}</h2>
+
+				<a href="/" class="btn btn-info" role="button">Go back to shorten another</a>
+
+			</div><!-- //main content -->
+		</div><!-- //row -->
+	</div> <!-- //container -->
+
+</body>
+</html>

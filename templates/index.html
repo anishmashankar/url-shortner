@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>URL Shortner</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Bootstrap -->
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+
+	<link href="http://fonts.googleapis.com/css?family=Abel|Open+Sans:400,600" rel="stylesheet" />
+
+	<style>
+		body {
+			padding-top: 20px;
+			font-size: 16px;
+			font-family: "Open Sans",serif;
+			background: transparent;
+			background-image: url(https://farm6.staticflickr.com/5221/13762225273_f246e75bd8_b.jpg);
+			background-size: 100%
+		}
+
+		h1 {
+			font-family: "Abel", Arial, sans-serif;
+			font-weight: 400;
+			font-size: 40px;
+		}
+
+		/* Override B3 .panel adding a subtly transparent background */
+		.panel {
+			background-color: rgba(255, 255, 255, 0.6);
+		}
+
+		.margin-base-vertical {
+			margin: 40px 0;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 panel panel-default">
+
+				<h1 class="margin-base-vertical">A Basic URL Shortening Service</h1>
+
+				<p>
+					Well, this is just an experiment to demostrate basic use of how MongoDB can be used with
+					Flask to power a web application.
+				</p>
+				<p>
+					Check it out!
+				</p>
+
+				<p>
+					Enter your long URL below to get shorten it!
+				</p>
+
+				<form class="margin-base-vertical" action="/" method="post">
+					<p class="input-group">
+						<span class="input-group-addon"><span class="icon-globe"></span></span>
+						<input type="text" required="true" class="form-control input-lg" name="long_url" placeholder="Begin your URL with http://" />
+					</p>
+					<p class="text-center">
+						<button type="submit" class="btn btn-success btn-lg">Shorten it!</button>
+					</p>
+					</span>
+				</form>
+
+			</div><!-- //main content -->
+		</div><!-- //row -->
+	</div> <!-- //container -->
+
+</body>
+</html>
